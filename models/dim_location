@@ -1,0 +1,11 @@
+{{ config(materialized='table') }}
+SELECT 
+    ride_id,
+    start_latitude,
+    start_longitude,
+    end_latitude,
+    end_longitude,
+    start_station_name,
+    end_station_name
+
+FROM testingproject-384800:cis4400_hw_dataset.citi_bike_table
